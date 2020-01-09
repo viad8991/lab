@@ -27,6 +27,9 @@ dependencies {
     //test dependencies
     testImplementation(Libs.junit_jupiter_engine)
     testImplementation(Libs.mockk)
+
+    //AI
+    compileOnly("nz.ac.waikato.cms.weka:weka-stable:3.8.4")
 }
 
 tasks {
