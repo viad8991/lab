@@ -1,13 +1,15 @@
 plugins {
+    `java-library`
     java
     buildSrcVersions
     kotlin("jvm") version Versions.org_jetbrains_kotlin
 }
 
 group = "ru.volggtu"
-version = "0.1.0"
+version = "0.2.0"
 
 repositories {
+    jcenter()
     mavenCentral()
 }
 
@@ -34,5 +36,11 @@ tasks {
 
     wrapper {
         gradleVersion = Versions.gradleLatestVersion
+    }
+
+    jar {
+        manifest {
+            attributes(mapOf("Implementation-Title" to project.name, "Implementation-Version" to project.version))
+        }
     }
 }
