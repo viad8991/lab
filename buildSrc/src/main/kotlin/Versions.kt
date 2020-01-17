@@ -22,7 +22,7 @@ object Versions {
 
     const val log4j_api_kotlin: String = "1.0.0"
 
-    const val log4j_core: String = "2.12.1"
+    const val log4j_core: String = "2.12.1" // available: "2.13.0"
 
     const val mockk: String = "1.9.3"
 
@@ -33,7 +33,7 @@ object Versions {
      * See issue 19: How to update Gradle itself?
      * https://github.com/jmfayard/buildSrcVersions/issues/19
      */
-    const val gradleLatestVersion: String = "6.0.1"
+    const val gradleLatestVersion: String = "6.1"
 }
 
 /**

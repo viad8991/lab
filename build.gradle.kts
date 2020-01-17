@@ -1,12 +1,10 @@
 plugins {
-    `java-library`
-    java
     buildSrcVersions
     kotlin("jvm") version Versions.org_jetbrains_kotlin
 }
 
 group = "ru.volggtu"
-version = "0.2.0"
+version = "0.3.0"
 
 repositories {
     jcenter()
@@ -29,7 +27,7 @@ dependencies {
     testImplementation(Libs.mockk)
 
     //AI
-    compileOnly("nz.ac.waikato.cms.weka:weka-stable:3.8.4")
+    //compileOnly("nz.ac.waikato.cms.weka:weka-stable:3.8.4")
 }
 
 tasks {

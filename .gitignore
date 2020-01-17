@@ -2,4 +2,10 @@
 out
 *.iml
 .idea
-build
+build/classes
+build/kotlin
+build/reports
+build/resources
+build/test-results
+build/tmp
+!build/libs/buildlab-0.3.0.jar
