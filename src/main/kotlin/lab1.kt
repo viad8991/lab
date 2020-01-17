@@ -1,12 +1,26 @@
-package ru.volggtu
+package ru.vstu
+
+import java.util.Scanner
 
 fun main() {
-    val engText = "Hello World"
+    println("Hello in yandex translate-console")
+    println("`exit` - stop command")
+    val read = Scanner(System.`in`)
 
-    val yandex = YandexImpl(engText)
-    val translateJson = yandex.translate()
+    var check = true
+    while (check) {
+        val engText = read.nextLine()
 
-    val rusText = translateJson.text
+        if("exit" == engText){
+            check = false
+        } else {
+            val yandex = YandexImpl(engText)
+            val translateJson = yandex.translate()
 
-    println("$engText - переводится как - $rusText")
+            val rusText = translateJson.text
+
+            println("$engText - переводится как - $rusText")
+        }
+    }
+    println("Good bye!")
 }

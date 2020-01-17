@@ -3,7 +3,7 @@ plugins {
     kotlin("jvm") version Versions.org_jetbrains_kotlin
 }
 
-group = "ru.volggtu"
+group = "ru.vstu"
 version = "0.3.0"
 
 repositories {

@@ -1,9 +1,9 @@
+package ru.vstu
+
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import ru.volggtu.Yandex
-import ru.volggtu.YandexImpl
 
 class TranslateTest {
 

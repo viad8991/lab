@@ -1,4 +1,4 @@
-package ru.volggtu
+package ru.vstu
 
 import javax.swing.JButton
 import javax.swing.JFrame
